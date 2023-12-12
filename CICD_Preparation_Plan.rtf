@@ -1,0 +1,322 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Certainly! Let's break down each step in the suggested 10-day CI/CD preparation plan with a more detailed description:\par
+\par
+\b Day 1-2: Understanding CI/CD Concepts\b0\par
+\b Day 1:\b0\par
+\b Overview of CI/CD:\par
+\b0 CICD is a practice in software developement and deployment cycle which priorties the small and frequent release to code base ensuring continuos testing, reliable code quality and reduced risks. \par
+\ul The principles of Continuous Integration (CI) and Continuous Deployment/Delivery (CD):\par
+CI:\par
+\ulnone It encourage developer to integrate code in shared repository multiple times in a day reliably and repeatedly.\par
+\ul CD:\par
+\ulnone It is an intention of CI and involves automatic deployment of code changes in production or staging environments after CI passed all the tests.\par
+Benefits of CI/CD:\ul\par
+\ulnone  *Early detection of bugs\par
+ *collaboration\par
+ *faster feedback\par
+ *reduced integration issues.\par
+ *Faster delivery\par
+ *Reduced deployment risks.\par
+ *Rapid feedback loop\par
+\par
+\b Day 2:\b0\par
+\b Deep dive into CI and CD\b0 :\par
+\par
+\ul How automated builds and tests are triggered upon code changes.\par
+\ulnone In Continuos integration(CI) system code changes initiate a automated builds and testing.  Usually, a CI/CD (Continuous Integration/Continuous Delivery) system is in charge of this procedure.\ul\par
+\i This is a summary of the steps involved in initiating automated builds and tests:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i0 Integration of Version Control System:\par
+
+\pard\sa200\sl276\slmult1\ulnone Integrating a version control system (VCS) like Git/SVN is a first step in a CICD process. Code modification are commited by developers to version control repository.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Webhooks/Polls:\par
+
+\pard\sa200\sl276\slmult1\ulnone A version control repository is monitored for changes by CICD system via webhook or polling. Because webhooks enable the VCS to instantly alert the CICD system when a change takes place.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Detection in Code Changes\ulnone :\par
+
+\pard\sa200\sl276\slmult1 The CICD system receives a notification of a new commit or push to a repository whenever code is discovered, then the system starts the CI pipeline.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Automated Build Procedure:\par
+
+\pard\sa200\sl276\slmult1\ulnone The CI/CD system initiates an automated build process. This involves compiling the code, resolving dependencies, and creating executable artifacts. The build process ensures that the code can be successfully transformed into a deployable form.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Tests for units:\par
+
+\pard\sa200\sl276\slmult1\ulnone The CI/CD system performs automatic unit tests after the build to ensure that individual code units perform as intended. This helps identify common mistakes and guarantees that the new code won't interfere with already-existing features.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Integration Testing:\par
+
+\pard\sa200\sl276\slmult1\ulnone The CI/CD system may run integration tests following the completion of successful unit tests. These tests confirm that the application's many modules or components function as a cohesive whole.  Integration testing aids in locating potential problems that could occur while integrating different software components.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Code Quality Inspections:\ulnone\par
+
+\pard\sa200\sl276\slmult1 To compare the code to best practices and coding standards, one may use static code analysis tools. This contributes to the continuous improvement of the code quality.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Creation of Artifacts:\par
+
+\pard\sa200\sl276\slmult1\ulnone The CI/CD system creates deployment artifacts, which could comprise executable files, libraries, or other resources required for deployment, when the build, unit tests, and extra checks are complete.\par
+\ul\i Continuous Deployment (automated deployment to production) and Continuous Delivery (ready-to-deploy code)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i0 Deployment to the staging environment\par
+
+\pard\sa200\sl276\slmult1\ulnone The artifacts may be deployed by the CI/CD system to a staging environment in a Continuous Delivery (CD) arrangement so that additional testing may be done. This allows for more comprehensive testing in an environment that closely resembles production.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul Automated Deployment:\ulnone\par
+
+\pard\sa200\sl276\slmult1 In a Continuous Deployment (CD) setup, the CI/CD system automatically deploys the artifacts to the production environment after successful testing in the staging environment.\par
+\ul\i Reporting and Notification:\par
+\ulnone\i0 Relevant stakeholders, such developers or team leads, are notified by the CI/CD system about the build and test results. It is possible to generate comprehensive reports that offer insights about the codebase's health.\par
+By automating these processes, CI/CD systems ensure that code changes are continuously integrated, tested, and validated, allowing development teams to catch and fix issues early in the development lifecycle. This iterative and automated approach contributes to faster and more reliable software development and delivery.\par
+\ul\i Differentiate between Continuous Deployment and Continuous Delivery.\par
+\i0 CI:\ulnone\par
+-It encourage developers to integrate code in shared repo. multiple times in a day (reliabaly and repeatadly).\par
+-Each integration is verified by automated build including test to detect integration errors as quickly as possible.\par
+\ul CD:\ulnone\par
+It's a intention of CI and involves automatically deploying code changes to production or staging environments after the CI process passed all the tests.\ul\i\par
+The principles of safely deploying changes to production environments\i0 .\par
+\ulnone Deploying changes to production environments requires careful consideration to ensure the stability, reliability, and security of the software.\par
+Here are some principles and best practices for safely deploying changes to production:\par
+\par
+\b Day 3-4: Version Control Systems (VCS)\par
+Day 3:\b0\par
+\ul Introduction to Git:\ulnone\b\par
+\b0 -Git is a popular distributed version control system (DVCS) for tracking source code changes during software development.\par
+-It offers a way for several developers to work together on a project while maintaining an extensive history of modifications.\par
+\ul Understand the concepts of repositories, commits, branches, and remotes etc.\par
+1.Repository:\par
+\ulnone -A Git repository is a collection of files and directories, along with the version history of those files. \par
+-It can exist locally on a developer's machine or remotely on a server (e.g., GitHub, GitLab, Bitbucket).\par
+\ul 2.Clone:\par
+\ulnone The process of copying a Git repository to your local computer is called cloning.\par
+git clone <repository_url>\par
+\ul 3.Commit:\par
+\ulnone -A commit is a snapshot of changes made to the files in the repository. \par
+-Commits are used to record the history of the project. After making changes, you commit them to the local repository.\par
+git add <file(s)>\par
+git commit -m "Your commit message"\par
+\ul 4.Branch:\par
+\ulnone -A branch in a Git repository is a distinct line of development. \par
+-You can work on updates or new features without having an impact on the main branch, known as master. Until they are prepared for merging, changes are isolated using branches.\par
+git branch <branch_name>\par
+git checkout <branch_name>\par
+git checkout -b <branch_name>\par
+\ul 5.Merge:\par
+\ulnone -Changes from various branches are combined during a merge. \par
+-You can merge a feature branch back into the main branch (often master) once its development is finished.\par
+git checkout master\par
+git merge <branch_name>\par
+\ul 6.Pull:\par
+\ulnone -Pulling is used to fetch changes from a remote repository and merge them into the local branch. \par
+-This is often done before pushing changes to ensure that you have the latest updates.\par
+git pull origin master\par
+\ul 7.Push:\par
+\ulnone -Pushing is used to upload local changes to a remote repository. \par
+-This makes your changes available to others working on the same project.\par
+git push origin master\par
+\ul 8.Remote:\par
+\ulnone -A remote repository is a copy that is kept on a server, like GitHub. \par
+-Changes can be pushed, pulled, and cloned to and from remotes by developers.\par
+git remote add origin <repository_url>\par
+\ul 9.Status:\par
+\ulnone -Shows the current state of your working directory. \par
+-It indicates which files are modified, untracked, or staged for commit.\par
+git status\par
+\ul 10.Log:\par
+\ulnone -It shows the commit history of the repository, including details such as commit messages, authors, and timestamps.\par
+git log\par
+\b Basic Git commands:\par
+1. Create a new local repository\b0\par
+\i\tab Command: \i0 git init\par
+\b 2.Check out a repository \b0\par
+  2.1.Create a working copy of a local repository:\par
+\i\tab command: \i0 git clone /path/to/repository\par
+  2.2.For a remote server, use:\par
+\i\tab command: \i0 git clone username@host:/path/to/repository\par
+\par
+\b 3.Add one or more files to staging (index):\b0\par
+   \tab\i Commands:\i0\par
+   \tab git add <filename>\par
+   \tab git add *\par
+\b 4.Commit\par
+\b0  4.1.Commit changes to head (but not yet to the remote repository):\par
+\tab\i Command: \i0 git commit -m "Commit message"\par
+ 4.2.Commit any files you've added with git add, and also commit any files you've changed since then:\par
+   \tab  \i Command: \i0 git commit -a\par
+\b 5.Send changes to the master branch of your remote repository:\par
+\b0\i\tab Command: \i0 git push origin master\par
+\b 6.List the files you've changed and those you still need to add or commit:\par
+\b0\i\tab Command: \i0 git status\par
+\b 7.Connect to a remote repository:\par
+\b0  7.1.If you haven't connected your local repository to a remote server, add the server to be able to push to it:\par
+   \tab\i Command: \i0 git remote add origin <server>\par
+ 7.2.List all currently configured remote repositories:\par
+   \tab\i Command: \i0 git remote -v\par
+\b 8.Branches\b0\par
+ 8.1.Create a new branch and switch to it:\par
+\i\tab Command: \i0 git checkout -b <branchname>\par
+ 8.2.Switch from one branch to another:\par
+   \tab\i Command: \i0 git checkout <branchname>\par
+ 8.3.List all the branches in your repo, and also tell you what branch you're currently in:\par
+\tab\i Command: \i0 git branch\par
+ 8.4.Delete the feature branch:\par
+\tab\i Command: \i0 git branch -d <branchname>\par
+ 8.5.Push the branch to your remote repository, so others can use it:\par
+\i\tab Command: \i0 git push origin <branchname>\par
+ 8.6.Push all branches to your remote repository:\par
+        \tab Command: git push --all origin\par
+ 8.7.Delete a branch on your remote repository:\par
+\i\tab Command:\i0  git push origin :<branchname>\par
+\b 9.Update from the remote repository:\par
+\b0  9.1.Fetch and merge changes on the remote server to your working directory:\par
+\i\tab Command:\i0  git pull\par
+ 9.2.To merge a different branch into your active branch:\par
+   \tab\i Command:\i0  git merge <branchname>\par
+ 9.3.View all the merge conflicts:\par
+           \tab\i Command:\i0  git diff \par
+       View the conflicts against the base file:\par
+\i\tab Command:\i0  git diff --base <filename>\par
+       Preview changes, before merging:\par
+   \tab\i Command:\i0  git diff <sourcebranch> <targetbranch>\par
+ 9.4.After you have manually resolved any conflicts, you mark the changed file:\par
+\i\tab Command: \i0 git add <filename>\par
+\b 10.Tags\b0 :\par
+ 10.1.You can use tagging to mark a significant changeset, such as a release:\par
+\i\tab Command: \i0 git tag 1.0.0 <commitID>\par
+ 10.2.CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:\par
+     \i Command: \i0 git log\par
+ 10.3.Push all tags to remote repository:\par
+     \i Command: \i0 git push --tags origin\par
+\b 11.Undo local changes\b0 :\par
+ 11.1.If you mess up, you can replace the changes in your working tree with the last content in head:Changes already added to the index, as well as new files, will be kept.     \par
+\i\tab Command\i0 : git checkout -- <filename>\par
+ 11.2.Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:\par
+     \tab\i Command\i0 : git fetch origin\par
+    \tab\i Command\i0 : git reset --hard origin/master\par
+\b 12.Search the working directory for foo():\par
+\b0\i\tab Commands: \i0 git grep "foo()"\par
+//Practice fundamental Git commands such as clone, add, commit, push, and pull.\par
+//Branching and merging in Git:\par
+\par
+Explore branching strategies and merging techniques in Git.\par
+Day 4:\par
+\par
+Advanced Git topics:\par
+\par
+Understand advanced Git topics like rebasing and submodules.\par
+Learn when to use these advanced features.\par
+Git workflows:\par
+\par
+Explore different Git workflows such as Gitflow and GitHub Flow.\par
+Understand how these workflows can help manage the development process.\par
+Day 5-6: CI Tools (Jenkins)\par
+Day 5:\par
+\par
+Introduction to Jenkins:\par
+\par
+Get an overview of Jenkins, an open-source automation server.\par
+Understand its role in automating the building, testing, and deployment of software.\par
+Installing and configuring Jenkins:\par
+\par
+Install Jenkins on your local machine or a server.\par
+Configure the basic settings and plugins.\par
+Creating your first Jenkins job:\par
+\par
+Create a simple Jenkins job to build and test a sample project.\par
+Understand the basic concepts of Jenkins jobs and pipelines.\par
+Day 6:\par
+\par
+Jenkins pipelines and DSL:\par
+\par
+\par
+Learn about Jenkins pipelines and how they provide a way to model complex build and deployment workflows.\par
+Understand the Jenkins Domain-Specific Language (DSL) for defining pipeline scripts.\par
+Integrating Jenkins with Git:\par
+\par
+Configure Jenkins to integrate with Git repositories.\par
+Trigger Jenkins jobs based on code changes in Git.\par
+Jenkins plugins for various tools:\par
+\par
+Explore and install Jenkins plugins for integration with other tools and technologies.\par
+Learn how plugins enhance Jenkins functionality.\par
+Day 7-8: Containerization (Docker)\par
+Day 7:\par
+\par
+Understanding Docker and containerization:\par
+\par
+Learn about Docker and containerization concepts.\par
+Understand the advantages of containerized applications.\par
+Docker basics:\par
+\par
+Explore Docker basics such as images, containers, and Dockerfile.\par
+Create a simple Docker image.\par
+Creating and managing Docker images:\par
+\par
+Understand the process of creating and managing Docker images.\par
+Explore Docker image registries.\par
+Day 8:\par
+\par
+Docker Compose for multi-container applications:\par
+\par
+Learn about Docker Compose for defining and running multi-container Docker applications.\par
+Create a docker-compose.yml file.\par
+Docker networking and storage:\par
+\par
+Understand Docker networking and storage concepts.\par
+Learn how containers communicate and persist data.\par
+Best practices for Dockerizing applications:\par
+\par
+Explore best practices for creating efficient and secure Docker images.\par
+Understand how to optimize Dockerfiles.\par
+Day 9: Orchestration (Kubernetes)\par
+Day 9:\par
+\par
+Introduction to Kubernetes:\par
+\par
+Learn the basics of Kubernetes, an open-source container orchestration platform.\par
+Understand the key components of Kubernetes.\par
+Deploying applications on Kubernetes:\par
+\par
+Explore how to deploy applications on Kubernetes clusters.\par
+Understand pods, deployments, and services in Kubernetes.\par
+Scaling and updating applications with Kubernetes:\par
+\par
+Learn how Kubernetes handles scaling and updates for containerized applications.\par
+Understand rolling updates and canary deployments.\par
+Day 10: CI/CD Best Practices and Summary\par
+Day 10:\par
+\par
+CI/CD best practices:\par
+\par
+Review best practices for implementing CI/CD pipelines.\par
+Explore strategies for improving speed and reliability in software delivery.\par
+Overview of CI/CD tools and platforms:\par
+\par
+Get an overview of other CI/CD tools and platforms in the industry.\par
+Understand how different tools fit into CI/CD ecosystems.\par
+Mock interviews and solving CI/CD-related problems:\par
+\par
+Practice answering CI/CD-related interview questions.\par
+Solve problems related to CI/CD scenarios to reinforce your learning.\par
+Notes:\par
+Hands-on Practice:\par
+\par
+Allocate time each day for hands-on practice to reinforce your understanding.\par
+Work on small projects to apply concepts learned during the day.\par
+Resources:\par
+\par
+Utilize online tutorials, documentation, and courses.\par
+Reference books and documentation for deeper understanding.\par
+Mock Interviews:\par
+\par
+Participate in mock interviews with peers or mentors.\par
+Discuss and review common CI/CD-related interview questions.\par
+Community Interaction:\par
+\par
+Engage with the CI/CD community, join forums, and ask questions.\par
+Participate in discussions on platforms like Stack Overflow or relevant forums.\par
+This detailed breakdown aims to guide you through each day of your CI/CD preparation. Make sure to adjust the schedule based on your progress, and focus on hands-on practice and real-world scenarios to reinforce your learning. Good luck with your CI/CD preparation!\par
+}
+ 
